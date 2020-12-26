@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+}
+
+/* global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  background-color: #ff4646;
+  border: none;
+  padding: 0 20px 0 20px;
+  color: #eeeeee;
+}
+
+.dark {
+  padding: 15px;
+  background-color: #393e46;
+  color: #eeeeee;
+  margin: 10px 0 10px 0;
+}
+
+/* header */
+header {
+  background-color: #222831;
+  color: #393e46;
+
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: 1 solid #222831;
+}
+
+header a {
+  color: #eeeeee;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  color: #eeeeee;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+
+header .highlight,
+header .current {
+  color: #ffd369;
+  font-weight: bold;
+}
+
+header a:hover {
+  border-bottom: 1px solid #ffd369;
+  color: #ffd369;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background: url("../img/ian-valerio-CAFq0pv9HjY-unsplash.jpg") no-repeat 0 -340px;
+  text-align: center;
+  color: #f5f4f4;
+}
+
+#showcase h1 {
+  margin: 100px 0 10px 0;
+  font-size: 55px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* newsletter */
+#newsletter {
+  padding: 15px 0 15px 0;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 10px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* boxes */
+#boxes {
+  /* margin-top: 20px; */
+  padding: 6% 0 6% 0;
+  background-color: #eee;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .sign-up input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* main col */
+article#main-col {
+  float: left;
+  width: 60%;
+}
+
+/* services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #cae4db;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #eeeeee;
+  background-color: #222831;
+  text-align: center;
+}
+
+/* mobile responsive */
+/* tablet size */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+    /* margin-bottom: 5px; */
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .sign-up button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #newsletter form input[type="email"],
+  .sign-up input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
